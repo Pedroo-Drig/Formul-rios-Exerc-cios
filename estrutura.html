@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Envio</h1>
+    </header>
+    <main>
+        <!--Form define um formulário-->
+        <!--'Action' especifica para onde os dados do formulario serão enviados-->
+        <form action="acao.html" method="post" enctype="multipart/form-data">
+            <!--method: get ou post.
+            Especifica como os dados serão enviados: Get envia os dados como parâmetro da URl e post envia no corpo da solicitação HTPP-->
+            <!--'enctype' especifíca que tipos de dados serão enviados pelo formulário-->
+            
+            <label>Nome: </label> 
+            <!--Label "etiqueta" o input, ou seja, informa o usuário qual o campo a ser preenchido-->
+            <input type="text" name="name" id="name" required>
+            <!--Input do tipo texto aceita somente caracteres do tipo texto-->
+            <!--Atributo required informa que o campo é obrigatório-->
+            <br>
+            <br>
+            <label> Email: </label>
+            <input type="text" name="email" id="email" required>
+            <!--Input tipo senha "esconde" o texto para o usuário para aumentar a segurança do dado-->
+            <br>
+            <br>
+            <label> Senha: </label>
+            <input type="password" name="senha" id="senha" required>
+
+            <br>
+            <br>
+
+            <label>Selecione um arquivo:</label>
+            <input type="file" name="file" id="file" accept=".png, .jpg, .jpeg" multiple>
+            <!--input tipo file permite a submissão de arquivos por meio do formulário-->
+            <!--'accep': tipos de arquivos aceitados-->
+            <!--'multiple': permite enviar mais de um arquivo-->
+            <br>
+            <br>
+            <label>Selecione a opção de envio: </label>
+            <br>
+            <input type="radio" name="option1" id="option1" value="1" > Expresso
+            <br>
+            <input type="radio" name="option1" id="option1" value="2" checked required> Padrão
+            <br>
+            <input type="radio" name="option1" id="option1" value="3" > Economica           
+            <!--Input do tipo radio funciona como uma 'lista' de seleção, para cada opção dessa lista deve-se colocar o mesmo "name" e "id", o atributo que deve
+            mudar com base na opção é o atributo "value"-->
+            <!--O atributo checked, deixa um opção marcada como padrão. Sempre que recarregar a página essa opção estará marcada-->
+            <br>
+            <br>
+            <label></label>
+            <input type="checkbox" name="math" id="math" required> Aceito os termos e condições
+            <!--Input do tipo "checkbox" funciona de uma maneira semelhante a radio, só que com a opção de seleção de múltiplos dados-->
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar">
+        </form>
+    </main>
+    
+</body>
+</html>

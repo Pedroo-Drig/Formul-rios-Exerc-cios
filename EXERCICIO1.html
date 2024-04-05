@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+    <header>
+        <center><h1>Exercício de Fieldset e Legend</h1></center>
+    </header>
+    <nav>
+
+    </nav>
+    <main>
+        <section>
+            <!--      Crie um formulário que contenha um campo de entrada de texto (input) para o nome do usuário e um campo de seleção (select) para escolher o 
+            gênero (opções: Masculino, Feminino, Outro). Use o elemento `<fieldset>` para agrupar esses campos e adicione uma legenda (elemento `<legend>`) que 
+            descreva o propósito do formulário. Certifique-se de que o campo de entrada de texto tenha um atributo `name` e o campo de seleção tenha um atributo 
+            `id`.-->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <form method="post">
+                    <label>Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </form>
+                <br>
+
+                <label>Gênero</label>
+                <select name="generos" id="generos">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
